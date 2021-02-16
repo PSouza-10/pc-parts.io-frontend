@@ -1,9 +1,10 @@
 import React from 'react';
-import { Sidebar } from './components'
+import { Sidebar,Footer } from './components'
 function App() {
   return (
     <div className="App">
       <Sidebar />
+      <Footer />
     </div>
   );
 }

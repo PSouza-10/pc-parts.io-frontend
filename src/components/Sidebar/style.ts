@@ -14,7 +14,7 @@ export const Container = styled.ul`
     overflow: hidden;
     white-space: nowrap;
 
-
+    
     max-width : 50px;
 
     &:hover {

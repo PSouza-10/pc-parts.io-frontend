@@ -15,3 +15,4 @@ Site de montagem de Computadores (Em Desenvolvimento)
 
 * [Paulo Henrique de Souza](https://github.com/PSouza-10)
 * [Gabriel Takuya Yamamoto](https://github.com/Takkuya)
+* [Gabriel Araújo de Jesus](https://github.com/Gabriel-J3sus)

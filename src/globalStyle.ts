@@ -1,4 +1,4 @@
-import {createGlobalStyle} from 'styled-components'
+import { createGlobalStyle } from "styled-components"
 export default createGlobalStyle`
     *{
         margin: 0;
@@ -20,7 +20,6 @@ export default createGlobalStyle`
     :root {
         --base-color : #222;
         --box-color : #333;
-        
         --icon : #ddd;
         --icon-active : #f2f2f2;
         --white-fade: #fff2;
@@ -51,6 +50,8 @@ export default createGlobalStyle`
 
     button {
         cursor:pointer;
+        border: none;
+    
     }
 
     ul {

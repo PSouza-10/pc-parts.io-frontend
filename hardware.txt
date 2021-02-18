@@ -1,0 +1,92 @@
+AMD:
+
+CPU: AMD
+{https://img.terabyteshop.com.br/produto/p/processador-amd-ryzen-3-3200g-36ghz-40ghz-turbo-4-core-4-thread-cooler-wraith-stealth-am4_76128.jpg
+Processador: Processador AMD Ryzen 3 3200G 3.6GHz (4.0GHz Turbo) 4/4 C/Cooler AM4 C/ Video: R$ 849,00}
+
+{https://img.terabyteshop.com.br/produto/p/processador-amd-ryzen-5-3600-36ghz-42ghz-turbo-6-core-12-thread-cooler-wraith-stealth-am4_76288.jpg
+Processador AMD Ryzen 5 3600 3.6GHz (4.2ghz Turbo) 6-Cores 12-Threads C/Cooler AM4 S/ Video: R$ 1.419,00}
+
+{https://img.terabyteshop.com.br/produto/p/processador-amd-ryzen-7-5800x-38ghz-47ghz-turbo-8-cores-16-threads-am4-sem-cooler_108383.jpg
+Processador AMD Ryzen 7 5800X 3.8GHz (4.7GHz Turbo), 8-Cores 16-Threads, AM4, Sem Cooler: R$ 2.998,00}
+
+
+Placa Mãe: AMD
+{https://img.terabyteshop.com.br/produto/p/placa-mae-asus-prime-a320m-k-ddr4-am4_42557.png
+Placa Mãe Asus Prime A320M-K, Chipset A320, AMD AM4, mATX, DDR4: R$ 443,69}
+
+{https://img.terabyteshop.com.br/produto/p/placa-mae-asrock-b450m-steel-legend-chipset-b450-amd-am4-matx-ddr4_71920.jpg
+Placa Mãe ASRock B450M Steel Legend Chipset B450 AMD AM4 mATX DDR4: R$ 749,00}
+
+{https://img.terabyteshop.com.br/produto/p/placa-mae-asrock-x570-phantom-gaming-x-wifi-chipset-x570-amd-am4-atx-ddr4-90-mxban0-a0uayz_87312.jpg
+Placa Mãe ASRock X570 Phantom Gaming X Wifi Chipset X570 AMD AM4 ATX DDR4: R$ 3.414,75}
+
+
+CPU: Intel
+{https://img.terabyteshop.com.br/produto/p/processador-intel-core-i3-10100-360ghz-430ghz-turbo-10-geracao-4-cores-8-threads-lga-1200-s-video-bx8070110100f_111481.png
+Processador Intel Core i3 10100F 3.60GHz (4.30GHz Turbo) 4/8 C/ Cooler LGA 1200 S/Video: R$ 599,00 }
+
+{https://img.terabyteshop.com.br/produto/p/processador-intel-core-i7-10700-290ghz-470ghz-turbo-10-geracao-8-cores-16-thread-lga-1200-bx8070110700_95187.jpg
+Processador Intel Core i7 10700, 2.90GHz (4.70GHz Turbo) 8/16 C/ Cooler LGA 1200 C/Video: R$ 2.439,00}
+
+{https://img.terabyteshop.com.br/produto/p/processador-intel-core-i9-10900ka-370-ghz-530ghz-turbo-10-geracao-10-cores-20-threads-cache-20mb-lga1200-bx8070110900ka_105056.png
+Processador Intel Core i9-10900KA, 3.70 GHz (5.30GHz Turbo), 10ª Geração, 10-Cores 20-Threads, Cache 20MB, LGA1200, BX8070110900KA: R$ 3.757,53}
+
+
+Placa mãe: Intel
+{https://img.terabyteshop.com.br/produto/p/placa-mae-asus-prime-h410m-e-chipset-h410-intel-lga1200-matx-ddr4_104965.jpg
+Placa Mãe Asus Prime H410M-E, Chipset H410, Intel LGA1200, mATX, DDR4: R$ 568,98}
+
+{https://img.terabyteshop.com.br/produto/p/placa-mae-asrock-b460m-steel-legendchipset-b460m-intel-lga-1200-atx-ddr4_105274.png
+Placa Mãe AsRock B460 Steel Legend,Chipset B460, Intel LGA 1200, ATX, DDR4: R$ 1.179,90}
+
+{https://img.terabyteshop.com.br/produto/p/placa-mae-asrock-z490-pg-velocita-chipset-z490-intel-lga1200-atx-ddr4_105283.png
+Placa Mãe AsRock Z490 PG Velocita, Chipset Z490, Intel LGA1200, ATX, DDR4: R$ 2.679,00}
+
+
+
+Mémoria RAM:
+{https://img.terabyteshop.com.br/produto/p/memoria-ddr4-geil-evo-potenza-8gb-3000mhz-black-gapb48gb3000c16asc_84610.jpg
+Memória DDR4 Geil Evo Potenza 8GB 3000MHz Black: R$ 303,63}
+
+
+GPU:
+{https://img.terabyteshop.com.br/produto/p/placa-de-video-colorful-geforce-gt-710-2gb-ddr3-64bit_102225.jpg
+Placa de Vídeo Colorful, GeForce, GT 710, 2GB DDR3, 64Bit, GT710-2GD3-V: R$ 239,00}
+
+{https://img.terabyteshop.com.br/produto/p/placa-de-video-galax-geforce-gtx-1660-super-1-click-oc-dual-6gb-gddr6-192bit-60srl7dsy91s_84873.jpg
+Placa de Vídeo Galax, GeForce, GTX 1660 Super, Dual, 1-Click OC, 6GB, GDDR6, 192Bit, 60SRL7DSY91S: R$ 2.957,13}
+
+{https://img.terabyteshop.com.br/produto/p/placa-de-video-pny-geforce-rtx-3090-xlr8-gaming-epic-x-rgb-triple-24gb-gddr6x-384bit-vcg309024tfxmpb_104002.png
+Placa de Vídeo PNY GeForce, RTX 3090 XLR8 Gaming EPIC-X RGB Triple, 24GB, GDDR6X, 384Bit, VCG309024TFXMPB: R$ 13.899,00}
+
+
+HD:
+{https://img.terabyteshop.com.br/produto/p/hd-seagate-barracuda-st1000dm010-1tb-7200rpm-64mb-sata-iii_36318.jpg
+HD Seagate Barracuda 1TB, Sata III, 7200RPM, 64MB: R$ 338,43 }
+
+
+SSD: 
+{https://img.terabyteshop.com.br/produto/p/ssd-adata-su630-240gb-sata-iii-leitura-520mbs-e-gravacao-450mbs-asu630ss-240gq-r_83139.jpg
+SSD Adata SU630, 240GB, Sata III, Leitura 520MBs e Gravação 450MBs: R$ 234,03}
+
+
+Fontes: 
+{https://img.terabyteshop.com.br/produto/p/fonte-cooler-master-elite-v3-mpw-3001-acaan1-wo-300w-pfc-ativo-atx_58156.jpg
+Fonte Cooler Master Elite V3 300W, PFC Ativo: R$ 312,33}
+
+{https://img.terabyteshop.com.br/produto/p/fonte-super-flower-550w-80-plus-gold-pfc-ativo-sf-550f14hg_108316.png
+Fonte Super Flower LEADEX III 550W, 80 Plus Gold, PFC Ativo, Full Modular, SF-550F14HG: R$ 547,23}
+
+{https://img.terabyteshop.com.br/produto/p/fonte-asus-rog-strix-650g-650w-80-plus-gold-full-modular-rsss03-650g1_113319.png
+Fonte Asus ROG Strix 650G, 650W, 80 Plus Gold, Full Modular: R$ 1.029,00}
+
+Gabinetes:
+{https://img.terabyteshop.com.br/produto/p/gabinete-gamer-t-dagger-p03b-mid-tower-rgb-black-atx-sem-fonte-sem-fan-tgc-p03b_114996.jpg
+Gabinete Gamer T-Dagger P03B, Mid Tower, RGB, Black, ATX, Sem Fonte, Sem Fan: R$ 169,90 }
+
+{https://img.terabyteshop.com.br/produto/p/gabinete-gamer-lian-li-pc-o11dw-dymanic-mid-tower-vidro-temperado-white-s-fonte_76337.jpg
+Gabinete Gamer Lian Li Dynamic, Mid Tower, Vidro Temperado, White, Sem Fonte, Sem Fan, PC-O11DX: R$ 1.139,00}]
+
+{https://img.terabyteshop.com.br/produto/p/gabinete-corsair-graphite-760t-cc-9011074-ww-artic-silver-full-tower-sfonte_24685.png
+Gabinete Gamer Corsair Graphite 760T, Full Tower, Com 3 Fans, Lateral em Acrílico, Artic White, Sem Fonte, CC-9011074-WW: R$ 1.739,91}

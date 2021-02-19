@@ -1,4 +1,4 @@
-AMDa:
+AMD:
 
 CPU: AMD
 {https://img.terabyteshop.com.br/produto/p/processador-amd-ryzen-3-3200g-36ghz-40ghz-turbo-4-core-4-thread-cooler-wraith-stealth-am4_76128.jpg

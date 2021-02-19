@@ -2,6 +2,7 @@
 
 pick-color.css
 yarn.lock
+.env
 # dependencies
 /node_modules
 /.pnp

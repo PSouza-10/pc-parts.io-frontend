@@ -1,5 +1,5 @@
-import { Container } from "./styles"
+import { Container } from './styles'
 
 export function SelectedParts() {
-  return <Container> </Container>
+	return <Container> </Container>
 }

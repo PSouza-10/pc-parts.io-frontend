@@ -43,11 +43,17 @@
       "last 1 safari version"
     ]
   },
-  
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@types/styled-components": "^5.1.7",
+    "commitizen": "^4.2.3",
+    "cz-conventional-changelog": "3.3.0",
     "husky": "^5.0.9"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

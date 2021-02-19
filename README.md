@@ -16,3 +16,7 @@ Site de montagem de Computadores (Em Desenvolvimento)
 * [Paulo Henrique de Souza](https://github.com/PSouza-10)
 * [Gabriel Takuya Yamamoto](https://github.com/Takkuya)
 * [Gabriel Araújo de Jesus](https://github.com/Gabriel-J3sus)
+
+## Layout
+
+- [Figma](https://www.figma.com/file/ectqX71kWNVARIbRwGzYCv/PC-Part.io?node-id=0%3A1)

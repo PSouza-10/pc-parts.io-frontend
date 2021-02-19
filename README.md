@@ -1,4 +1,4 @@
-# PC-Parts.io 
+# PC-Parts.io
 
 Site de montagem de Computadores (Em Desenvolvimento)
 
@@ -6,17 +6,19 @@ Site de montagem de Computadores (Em Desenvolvimento)
 
 ## Stack e librarias
 
-* React
-* Typescript
-* Styled Components
-* React Icons
+-   React
+-   Typescript
+-   Styled Components
+-   React Icons
 
 ## Desenvolvedores
 
-* [Paulo Henrique de Souza](https://github.com/PSouza-10)
-* [Gabriel Takuya Yamamoto](https://github.com/Takkuya)
-* [Gabriel Araújo de Jesus](https://github.com/Gabriel-J3sus)
+-   [Paulo Henrique de Souza](https://github.com/PSouza-10)
+-   [Gabriel Takuya Yamamoto](https://github.com/Takkuya)
+-   [Gabriel Araújo de Jesus](https://github.com/Gabriel-J3sus)
 
 ## Layout
 
-- [Figma](https://www.figma.com/file/ectqX71kWNVARIbRwGzYCv/PC-Part.io?node-id=0%3A1)
+-   [Figma](https://www.figma.com/file/ectqX71kWNVARIbRwGzYCv/PC-Part.io?node-id=0%3A1)
+
+## [Data Flow do Frontend](https://lucid.app/lucidchart/invitations/accept/0c69a236-367d-4390-a5d6-7485f270e7dc)

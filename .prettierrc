@@ -9,5 +9,5 @@
   "bracketSpacing": true,
   "jsxSingleQuote": true,
   "jsxBracketSameLine": false,
-"endOfLine": "lf"
+  "endOfLine": "auto"
 }

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 export default createGlobalStyle`
     *{
         margin: 0;
@@ -37,6 +37,8 @@ export default createGlobalStyle`
         --action-red : #d80230; 
         --action-blue : #0282d8; 
         --action-dark-blue: #00558f;
+
+        
     }
     html {
         background-color : var(--base-color)
@@ -45,7 +47,12 @@ export default createGlobalStyle`
         min-height: 100%;
         width:100%;
     }
-
+    body::-webkit-scrollbar{
+        background-color: #0000;
+    }
+    body::-webkit-scrollbar-thumb {
+        background-color: var(--action-blue);
+    }
     .App{
         background-color: var(--base-color);
         width: 100%;
@@ -53,50 +60,6 @@ export default createGlobalStyle`
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    .container {
-        margin-top: 4.43rem;
-       
-        /* padding-left: 25vw; */
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-gap: 2.5rem 2rem;
-
-        /* @media(max) */
-    }
-
-    .chat {
-        width: 5rem;
-        height: 5rem;
-
-        position: fixed;
-        z-index: 10;
-        bottom: 0;
-        margin-bottom: 64px;
-        right: 0;
-        margin-right: 26px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        border: 2px solid #A7BAFF;
-        border-radius: 100%;
-        transition: 0.2s;
-        
-        button {
-            width: 100%;
-            height: 100%;
-            background: none;
-            border-radius: 100%;
-        }
-
-        &:hover {
-            opacity: 0.8;
-            transform: translateY(-2px);
-        }
     }
 
     a{
@@ -114,4 +77,4 @@ export default createGlobalStyle`
         list-style:none;
     }
 
-`
+`;

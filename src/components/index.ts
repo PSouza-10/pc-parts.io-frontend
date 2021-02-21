@@ -1,3 +1,4 @@
-export { Sidebar } from './Sidebar'
-export { Card } from './Card'
-export { LoginModal } from './LoginModal'
+export { Home } from "./Home";
+export { Sidebar } from "./Sidebar";
+export { Chat } from "./Chat";
+export { Card } from "./Card";

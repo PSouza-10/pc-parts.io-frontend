@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-
-export const Container = styled.ul`
+import { MdMenu } from 'react-icons/md'
+export const Container = styled.ul<{ open: boolean }>`
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -13,11 +13,9 @@ export const Container = styled.ul`
 	transition: max-width 0.3s ease;
 	overflow: hidden;
 	white-space: nowrap;
-
-	max-width: 50px;
-
-	&:hover {
-		max-width: 100%;
+	z-index: 3;
+	@media (max-width: 768px) {
+		max-width: ${({ open }) => (open ? '100%' : '0')};
 	}
 `
 interface ItemProps {
@@ -41,7 +39,7 @@ export const Item = styled.li<ItemProps>`
 
 	.text {
 		padding: 10px;
-		font-size: 1.3rem;
+		font-size: 1.1rem;
 	}
 	transition: all 0.2s ease;
 	&:hover {
@@ -50,5 +48,25 @@ export const Item = styled.li<ItemProps>`
 		.icon {
 			fill: ${({ accentColor }) => `var(--${accentColor})`};
 		}
+	}
+`
+export const Overlay = styled.div<{ visible: boolean }>`
+	visibility: ${({ visible }) => (visible ? 'visible' : 'hidden')};
+	background-color: #0008;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+`
+export const Toggle = styled(MdMenu)`
+	visibility: hidden;
+	position: fixed;
+	left: 15px;
+	top: 15px;
+	height: 35px;
+	width: 35px;
+	@media (max-width: 768px) {
+		visibility: visible;
 	}
 `

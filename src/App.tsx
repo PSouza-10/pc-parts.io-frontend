@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Sidebar, Footer, Card } from './components'
+import { BsFillChatFill } from 'react-icons/bs'
+import { Sidebar, Card } from './components'
 import { Modal } from './components/Modal'
 
 function App() {
@@ -10,9 +11,23 @@ function App() {
 	return (
 		<div className='App'>
 			<Sidebar />
-			<Card />
-			<Footer />
-			<button onClick={handleOpenModal}>Botão pega no meu pão</button>
+
+			<div className='container'>
+				<Card />
+				<Card />
+				<Card />
+				<Card />
+				<Card />
+				<Card />
+				<Card />
+				<Card />
+			</div>
+
+			<div onClick={handleOpenModal} className='chat'>
+				<button>
+					<BsFillChatFill size={40} fill='#6E83CF' />
+				</button>
+			</div>
 
 			<Modal handleOpenModal={handleOpenModal} visible={openModal} />
 		</div>

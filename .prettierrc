@@ -1,0 +1,6 @@
+{
+  "bracketSpacing": true,
+  "jsxSingleQuote": true,
+  "jsxBracketSameLine": false,
+  "endOfLine": "auto"
+}

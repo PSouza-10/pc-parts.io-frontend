@@ -20,8 +20,8 @@ export interface IModalSize {
 interface IModalProps {
 	visible: boolean
 	size: IModalSize
-	headerCSS?: FlattenSimpleInterpolation
-	transition?: string
+	headerCSS?: FlattenSimpleInterpolation | string
+	transition?: 'bottom' | 'left' | 'right' | 'top' | ''
 }
 const position = (transition: string, visible: boolean) => {
 	const relPos = visible ? '0%' : '200%'

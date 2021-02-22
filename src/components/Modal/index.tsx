@@ -17,9 +17,9 @@ interface ModalProps {
 	lockBody?: boolean
 	header?: {
 		title: string
-		CSS?: FlattenSimpleInterpolation
+		CSS?: FlattenSimpleInterpolation | string
 	}
-	transition?: string
+	transition?: 'bottom' | 'left' | 'right' | 'top' | ''
 }
 
 export const Modal: React.FC<ModalProps> = ({

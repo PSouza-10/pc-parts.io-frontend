@@ -10,8 +10,12 @@ export default function Account() {
 		<>
 			<Container onClick={handleLoginModal}> </Container>
 			<Modal
-				handleOpenModal={handleLoginModal}
+				toggleVisibility={handleLoginModal}
 				visible={openAccountModal}
+				header={{
+					title: 'Entrar',
+				}}
+				transition='bottom'
 			>
 				<AccountForm />
 			</Modal>

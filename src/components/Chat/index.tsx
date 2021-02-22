@@ -9,7 +9,7 @@ export function Chat() {
 
 	return (
 		<>
-			<Modal handleOpenModal={handleOpenModal} visible={openModal} />
+			<Modal toggleVisibility={handleOpenModal} visible={openModal} />
 			<Container>
 				<ChatIcon />
 			</Container>

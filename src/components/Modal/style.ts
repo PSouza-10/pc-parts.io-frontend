@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { css, FlattenSimpleInterpolation } from 'styled-components'
 
 export const Overlay = styled.div<{ visible: boolean }>`
 	position: fixed;
@@ -20,8 +20,21 @@ export interface IModalSize {
 interface IModalProps {
 	visible: boolean
 	size: IModalSize
+	headerCSS?: FlattenSimpleInterpolation
+	transition?: string
 }
-
+const position = (transition: string, visible: boolean) => {
+	const relPos = visible ? '0%' : '200%'
+	const prefix = ['left', 'top'].includes(transition) ? '-' : ''
+	switch (transition) {
+		case 'top':
+		case 'bottom':
+			return `translateY(${prefix + relPos})`
+		case 'right':
+		case 'left':
+			return `translateX(${prefix + relPos})`
+	}
+}
 export const ModalContainer = styled.div<IModalProps>`
 	position: fixed;
 	background-color: var(--base-color);
@@ -29,19 +42,45 @@ export const ModalContainer = styled.div<IModalProps>`
 	visibility: ${({ visible }) => (visible ? 'visible' : 'hidden')};
 	opacity: ${({ visible }) => (visible ? '1' : '0')};
 
-	transition: all 0.2s ease;
+	transition: all 0.4s ease;
 	${({ size: { top, bottom, left, right } }) => css`
 		top: ${top};
 		bottom: ${bottom};
 		right: ${left};
 		left: ${right};
 	`}
-
+	${({ transition, visible }) =>
+		transition &&
+		css`
+			transform: ${position(transition, visible)};
+		`}
 	display: flex;
 	flex-direction: column;
 
-	span {
-		font-weight: 300;
-		font-size: 14px;
+	.modal-header {
+		height: 50px;
+		display: flex;
+		border-bottom: 2px solid var(--action-blue);
+		.modal-header-title {
+			margin-left: 1rem;
+			font-size: 2rem;
+		}
+
+		.modal-header-close {
+			margin-left: auto;
+			padding: 5px;
+			svg {
+				width: 40px;
+				height: 40px;
+			}
+			&:hover {
+				background-color: var(--white-fade);
+				svg {
+					fill: var(--action-blue);
+				}
+			}
+		}
+
+		${({ headerCSS, theme }) => headerCSS || theme.headerCSS || ''}
 	}
 `

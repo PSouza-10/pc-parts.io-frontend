@@ -32,6 +32,7 @@ export default createGlobalStyle`
         --pink : #ff40aa;
         --yellow : #ffed27;
         --purple : #7700ff;
+        --modal-overlay: #00000080;
 
         --action-green : #029118; 
         --action-red : #d80230; 
@@ -58,8 +59,9 @@ export default createGlobalStyle`
         width: 100%;
         height: 100%;
         display: flex;
-        align-items: center;
+       padding-left: 20vw;
         justify-content: center;
+        flex-direction:column;
     }
 
     a{

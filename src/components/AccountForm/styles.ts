@@ -1,12 +1,12 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
-  .ModalHeader {
-  }
+	.ModalHeader {
+	}
 
-  .ModalBody {
-  }
+	.ModalBody {
+	}
 
-  .ModalFooter {
-  }
-`;
+	.ModalFooter {
+	}
+`

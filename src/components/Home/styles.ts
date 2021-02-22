@@ -1,18 +1,18 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
 export const Container = styled.div`
-  margin-left: 50px;
-  display: flex;
+	margin-left: 50px;
+	display: flex;
 
-  .container {
-    margin-top: 4.43rem;
+	.container {
+		margin-top: 4.43rem;
 
-    /* padding-left: 25vw; */
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 2.5rem 2rem;
-  }
-  ${({ theme: { xl, lg, md, sm } }) => css`
+		/* padding-left: 25vw; */
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 2.5rem 2rem;
+	}
+	${({ theme: { xl, lg, md, sm } }) => css`
     @media (max-width: ${xl}) {
       .container {
         grid-template-columns: repeat(3, 1fr);
@@ -44,4 +44,4 @@ export const Container = styled.div`
       }
     }
   `}
-`;
+`

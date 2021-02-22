@@ -11,16 +11,18 @@ export const Overlay = styled.div<{ visible: boolean }>`
 	right: 0;
 	left: 0;
 `
-interface IModalSize {
-	top: string | '5vh'
-	bottom: string | '5vh'
-	left: string | '5vw'
-	right: string | '5vw'
+export interface IModalSize {
+	top: string
+	bottom: string
+	left: string
+	right: string
 }
-export const ModalContainer = styled.div<{
+interface IModalProps {
 	visible: boolean
 	size: IModalSize
-}>`
+}
+
+export const ModalContainer = styled.div<IModalProps>`
 	position: fixed;
 	background-color: var(--base-color);
 	z-index: 200;

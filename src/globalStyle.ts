@@ -54,11 +54,15 @@ export default createGlobalStyle`
         width: 100%;
         height: 100%;
         display: flex;
-      
-        justify-content: center;
-        flex-direction:column;
+        
+       .right {
+        flex:1;
+       }
+        
     }
-    
+    .content-display {
+        flex-basis: 80%;
+    }
     a{
         text-decoration: none;
         color: inherit;

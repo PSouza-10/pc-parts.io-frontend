@@ -3,16 +3,20 @@ import { AiOutlineEye } from 'react-icons/ai'
 
 export const Container = styled.div`
 	width: 13.59rem;
-	height: 21.63rem;
-
+	height: fit-content;
 	border: 0.0625rem solid var(--card-border-color);
 	border-radius: 0px 0px 10px 10px;
 	cursor: pointer;
 	display: flex;
 	flex-direction: column;
-	img {
+	.img-wrapper {
 		width: 100%;
-		height: 12.5rem;
+		max-height: 45vh;
+		min-height: 45vh;
+		img {
+			width: 100%;
+			height: 100%;
+		}
 	}
 
 	h4 {
@@ -30,14 +34,14 @@ export const Container = styled.div`
 
 	.text {
 		margin-left: 10px;
-		margin-top: auto;
+		margin-top: 30px;
 	}
 
 	.button-container {
 		display: flex;
 
 		flex-wrap: nowrap;
-		height: 13%;
+		height: 40px;
 
 		button:not(.eye-button) {
 			flex: 1;
@@ -68,10 +72,7 @@ export const Container = styled.div`
 	}
 
 	@media (max-width: ${({ theme: { sm } }) => sm}) {
-		min-height: 70vh;
-		img {
-			flex: 0.9;
-		}
+		min-height: 50vh;
 	}
 `
 export const EyeIcon = styled(AiOutlineEye)`

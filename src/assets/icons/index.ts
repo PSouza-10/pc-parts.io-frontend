@@ -9,6 +9,7 @@ export {
 	BsFillChatFill as ChatIcon,
 	AiOutlineSearch as SearchIcon,
 	MdPerson as UserIcon,
+	MdClose as Close,
 } from 'react-icons/all'
 
 export { Case } from './Case'

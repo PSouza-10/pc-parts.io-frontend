@@ -31,16 +31,21 @@ export const Container = styled.div`
         grid-template-columns: repeat(2, 1fr);
       }
     }
+    @media (max-width: ${md}){
+      .container {
+        margin-left: 0;
+      }
+    }
 
     @media (max-width: ${sm}) {
       margin-left: 0;
       width: 100%;
       display:flex
       flex-direction:column;
-      padding: 0 6vh;
        .container {
+      padding: 0 5vh;
          width: 100%;
-        padding: 0 5vw;
+        
         
         .card{
            width:100%;

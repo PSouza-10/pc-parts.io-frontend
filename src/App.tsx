@@ -17,8 +17,10 @@ function App() {
 	return (
 		<div className='App'>
 			<Sidebar />
-			<Header />
-			<Home />
+			<main className='right'>
+				<Header />
+				<Home />
+			</main>
 			<Chat />
 		</div>
 	)

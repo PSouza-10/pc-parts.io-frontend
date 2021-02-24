@@ -1,19 +1,17 @@
 import styled from 'styled-components'
 export const Container = styled.ul<{ open: boolean }>`
-	position: fixed;
-	left: 0;
-	top: 0;
-	bottom: 0;
-
 	display: flex;
 	flex-direction: column;
 
 	background-color: var(--box-color);
 	transition: max-width 0.3s ease;
-	overflow: hidden;
 	white-space: nowrap;
 	z-index: 4;
 	@media (max-width: ${({ theme: { md } }) => md}) {
+		position: fixed;
+		bottom: 0;
+		top: 0;
+		overflow: hidden;
 		max-width: ${({ open }) => (open ? '100%' : '0')};
 	}
 `

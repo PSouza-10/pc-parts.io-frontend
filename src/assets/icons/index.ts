@@ -7,6 +7,9 @@ export {
 	ImPowerCord as PowerSupply,
 	MdKeyboardArrowUp as ArrowUp,
 	BsFillChatFill as ChatIcon,
+	AiOutlineSearch as SearchIcon,
+	MdPerson as UserIcon,
 } from 'react-icons/all'
 
 export { Case } from './Case'
+export { Google } from './Google'

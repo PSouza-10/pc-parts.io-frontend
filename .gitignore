@@ -1,5 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+PC-Parts.io-server
 pick-color.css
 yarn.lock
 .env

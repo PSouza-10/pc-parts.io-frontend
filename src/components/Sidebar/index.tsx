@@ -16,8 +16,8 @@ export function Sidebar() {
 				<MdMenu className='toggle-icon' />
 			</Toggle>
 			<Container open={isOpen}>
-				{items.map(({ texto, tipo, image, accentColor }) => (
-					<Item accentColor={accentColor}>
+				{items.map(({ texto, tipo, image, accentColor }, idx) => (
+					<Item accentColor={accentColor} key={idx}>
 						<span className='icon-wrapper'>{image}</span>
 						<h2 className='text'>{texto}</h2>
 					</Item>

@@ -1,14 +1,21 @@
-import { Container } from './style'
-import { useState } from 'react'
+import { Container, LoginContainer } from './style'
+import { useState, useContext } from 'react'
 import { Modal } from '../Modal'
-import { AccountForm } from '../AccountForm'
+import { Google, UserIcon } from '../icons'
+import { AuthContext } from '../../Context/Auth'
 export default function Account() {
 	const [openAccountModal, setOpenAccountModal] = useState(false)
-
+	const { user } = useContext(AuthContext)
 	const handleLoginModal = () => setOpenAccountModal(!openAccountModal)
 	return (
 		<>
-			<Container onClick={handleLoginModal}> </Container>
+			<Container onClick={handleLoginModal}>
+				{user?._id ? (
+					<img src={user.picture} alt={user.name} />
+				) : (
+					<UserIcon />
+				)}
+			</Container>
 			<Modal
 				toggleVisibility={handleLoginModal}
 				visible={openAccountModal}
@@ -17,7 +24,19 @@ export default function Account() {
 				}}
 				transition='bottom'
 			>
-				<AccountForm />
+				<LoginContainer>
+					<section className='google-icon'>
+						<Google />
+					</section>
+					<a
+						href='http://localhost:5000/account/google'
+						target='_blank'
+						className='google-login'
+					>
+						{' '}
+						Entrar com o google
+					</a>
+				</LoginContainer>
 			</Modal>
 		</>
 	)

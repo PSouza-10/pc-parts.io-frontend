@@ -33,9 +33,10 @@ export const Container = styled.button`
 
 	${({ theme: { xl, lg, md, sm } }) => css`
 		@media (max-width: ${sm}) {
-			width: 2.5rem;
-			height: 2.5rem;
-
+			width: 3rem;
+			height: 3rem;
+			bottom: 15px;
+			right: 20px;
 			svg {
 				width: 1.25rem;
 				height: 1.25rem;
@@ -43,9 +44,6 @@ export const Container = styled.button`
 		}
 
 		@media (max-width: ${md}) {
-			top: 15px;
-			right: 15px;
-
 			width: 2.5rem;
 			height: 2.5rem;
 

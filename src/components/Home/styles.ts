@@ -1,13 +1,20 @@
 import styled, { css } from 'styled-components'
 
 export const Container = styled.div`
-	margin-left: 50px;
 	display: flex;
-
+	overflow-y: scroll;
+	max-height: 90vh;
+	&::-webkit-scrollbar {
+		background-color: #0000;
+		width: 12px;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--action-blue);
+		border-radius: 0.3em;
+	}
 	.container {
 		margin-top: 4.43rem;
 
-		/* padding-left: 25vw; */
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-gap: 2.5rem 2rem;
@@ -30,7 +37,7 @@ export const Container = styled.div`
       width: 100%;
       display:flex
       flex-direction:column;
-   
+      padding: 0 6vh;
        .container {
          width: 100%;
         padding: 0 5vw;

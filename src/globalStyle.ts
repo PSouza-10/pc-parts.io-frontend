@@ -14,7 +14,7 @@ export default createGlobalStyle`
         user-select: none;
         outline: none;
         box-shadow: none;
-        color: var(--text-primary)
+        color: var(--text-primary);
     }
 
     :root {
@@ -48,22 +48,17 @@ export default createGlobalStyle`
         min-height: 100%;
         width:100%;
     }
-    body::-webkit-scrollbar{
-        background-color: #0000;
-    }
-    body::-webkit-scrollbar-thumb {
-        background-color: var(--action-blue);
-    }
+   
     .App{
         background-color: var(--base-color);
         width: 100%;
         height: 100%;
         display: flex;
-       padding-left: 20vw;
+      
         justify-content: center;
         flex-direction:column;
     }
-
+    
     a{
         text-decoration: none;
         color: inherit;

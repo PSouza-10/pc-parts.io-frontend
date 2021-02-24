@@ -4,6 +4,7 @@ import App from './App'
 import GlobalStyle from './globalStyle'
 import { ThemeProvider } from 'styled-components'
 import theme from './Theme'
+import AuthProvider from './Context/Auth'
 ReactDOM.render(
 	<React.StrictMode>
 		<ThemeProvider theme={theme}>

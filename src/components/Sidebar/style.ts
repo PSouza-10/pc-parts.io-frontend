@@ -63,7 +63,7 @@ export const Toggle = styled.button`
 	visibility: hidden;
 	position: fixed;
 	left: 0;
-	top: 0;
+	bottom: 0;
 
 	padding: 15px;
 	background-color: #2228;

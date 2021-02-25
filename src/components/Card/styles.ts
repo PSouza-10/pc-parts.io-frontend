@@ -2,13 +2,14 @@ import styled from 'styled-components'
 import { AiOutlineEye } from 'react-icons/ai'
 
 export const Container = styled.div`
-	width: 13.59rem;
+	width: 15.5rem;
 	height: fit-content;
 	border: 0.0625rem solid var(--card-border-color);
 	border-radius: 0px 0px 10px 10px;
 	cursor: pointer;
 	display: flex;
 	flex-direction: column;
+
 	.img-wrapper {
 		width: 100%;
 		max-height: 45vh;
@@ -71,12 +72,13 @@ export const Container = styled.div`
 		}
 	}
 
+	svg {
+		height: 1.3rem;
+		width: 1.3rem;
+		margin: 0 auto;
+	}
+
 	@media (max-width: ${({ theme: { sm } }) => sm}) {
 		min-height: 50vh;
 	}
-`
-export const EyeIcon = styled(AiOutlineEye)`
-	height: 22px;
-	width: 22px;
-	margin: 0 auto;
 `

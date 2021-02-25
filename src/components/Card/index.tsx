@@ -1,4 +1,5 @@
-import { Container, EyeIcon } from './styles'
+import { Container } from './styles'
+import { EyeIcon } from '../icons'
 
 export function Card() {
 	return (

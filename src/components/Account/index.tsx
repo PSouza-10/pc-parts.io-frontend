@@ -3,6 +3,7 @@ import { useState, useContext } from 'react'
 import { Modal } from '../Modal'
 import { Google, UserIcon } from '../icons'
 import { AuthContext } from '../../Context/Auth'
+import { List } from '../List'
 export default function Account() {
 	const [openAccountModal, setOpenAccountModal] = useState(false)
 	const { user } = useContext(AuthContext)
@@ -23,6 +24,10 @@ export default function Account() {
 					title: 'Entrar',
 				}}
 				transition='bottom'
+				size={{
+					right: '30vw',
+					left: '30vw',
+				}}
 			>
 				<LoginContainer>
 					<section className='google-icon'>
@@ -37,6 +42,7 @@ export default function Account() {
 						Entrar com o google
 					</a>
 				</LoginContainer>
+				<List />
 			</Modal>
 		</>
 	)

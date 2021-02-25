@@ -10,6 +10,11 @@ export {
 	AiOutlineSearch as SearchIcon,
 	MdPerson as UserIcon,
 	MdClose as Close,
+	RiMoneyDollarCircleFill as MoneyIcon,
+	GoGear as GearIcon,
+	FaPlusSquare as PlusIcon,
+	BsFillEyeFill as EyeIcon,
+	IoIosCart as CartIcon,
 } from 'react-icons/all'
 
 export { Case } from './Case'

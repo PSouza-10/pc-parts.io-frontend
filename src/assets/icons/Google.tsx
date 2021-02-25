@@ -3,8 +3,6 @@ export function Google({ className }: { className?: string }) {
 		<svg
 			version='1.1'
 			id='Layer_1'
-			x='0px'
-			y='0px'
 			viewBox='0 0 512 512'
 			className={className}
 		>
@@ -32,21 +30,6 @@ export function Google({ className }: { className?: string }) {
 	c-66.729,0-123.429,42.957-143.965,102.724l-83.397-68.276h-0.014C71.23,56.123,157.06,0,256,0
 	C318.115,0,375.068,22.126,419.404,58.936z'
 			/>
-			<g></g>
-			<g></g>
-			<g></g>
-			<g></g>
-			<g></g>
-			<g></g>
-			<g></g>
-			<g></g>
-			<g></g>
-			<g></g>
-			<g></g>
-			<g></g>
-			<g></g>
-			<g></g>
-			<g></g>
 		</svg>
 	)
 }

@@ -5,7 +5,7 @@ export const Container = styled.button`
 
 	position: fixed;
 	z-index: 10;
-	bottom: 64px;
+	bottom: 16px;
 	right: 26px;
 	background-color: #6e83cf;
 	display: flex;

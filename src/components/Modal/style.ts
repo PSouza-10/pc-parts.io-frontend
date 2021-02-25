@@ -12,10 +12,10 @@ export const Overlay = styled.div<{ visible: boolean }>`
 	left: 0;
 `
 export interface IModalSize {
-	top: string
-	bottom: string
-	left: string
-	right: string
+	top?: string
+	bottom?: string
+	left?: string
+	right?: string
 }
 interface IModalProps {
 	visible: boolean
@@ -43,12 +43,20 @@ export const ModalContainer = styled.div<IModalProps>`
 	opacity: ${({ visible }) => (visible ? '1' : '0')};
 
 	transition: all 0.4s ease;
-	${({ size: { top, bottom, left, right } }) => css`
+	${({ theme: { md }, size: { top, bottom, left, right } }) => css`
 		top: ${top};
 		bottom: ${bottom};
 		right: ${left};
 		left: ${right};
+
+		@media (max-width: ${md}) {
+			top: 5vh;
+			bottom: 5vh;
+			right: 5vw;
+			left: 5vw;
+		}
 	`}
+
 	${({ transition, visible }) =>
 		transition &&
 		css`

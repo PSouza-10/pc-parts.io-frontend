@@ -2,6 +2,7 @@ import { Overlay, ModalContainer, IModalSize } from './style'
 import { FlattenSimpleInterpolation } from 'styled-components'
 import { useEffect } from 'react'
 import { MdClose } from 'react-icons/md'
+
 const defaultSize = {
 	top: '5vh',
 	bottom: '5vh',
@@ -45,7 +46,7 @@ export const Modal: React.FC<ModalProps> = ({
 			)}
 			<ModalContainer
 				visible={visible}
-				size={size}
+				size={{ ...defaultSize, ...size }}
 				headerCSS={header.CSS}
 				transition={transition}
 			>

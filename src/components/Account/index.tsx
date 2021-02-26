@@ -1,6 +1,7 @@
 import { Container, LoginContainer } from './style'
 import { useState, useContext } from 'react'
 import { Modal } from '../Modal'
+import Dropdown from '../Dropdown'
 import { Google, UserIcon } from '../icons'
 import { AuthContext } from '../../Context/Auth'
 import { List } from '../List'
@@ -42,7 +43,6 @@ export default function Account() {
 						Entrar com o google
 					</a>
 				</LoginContainer>
-				<List />
 			</Modal>
 		</>
 	)

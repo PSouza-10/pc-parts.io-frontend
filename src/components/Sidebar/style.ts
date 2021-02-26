@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 export const Container = styled.ul<{ open: boolean }>`
 	display: flex;
 	flex-direction: column;
@@ -35,7 +35,7 @@ export const Item = styled.li<ItemProps>`
 	}
 
 	.text {
-		padding: 10px;
+		padding: 10px 12px;
 		font-size: 1.1rem;
 	}
 	transition: all 0.2s ease;
@@ -46,6 +46,10 @@ export const Item = styled.li<ItemProps>`
 			fill: ${({ accentColor }) => `var(--${accentColor})`};
 		}
 	}
+
+	border-right: 2px solid
+		${({ selected, accentColor }) =>
+			selected ? `var(--${accentColor})` : 'transparent'};
 `
 export const Overlay = styled.div<{ visible: boolean }>`
 	visibility: ${({ visible }) => (visible ? 'visible' : 'hidden')};

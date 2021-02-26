@@ -15,6 +15,9 @@ export {
 	FaPlusSquare as PlusIcon,
 	BsFillEyeFill as EyeIcon,
 	IoIosCart as CartIcon,
+	MdKeyboardArrowDown as ArrowDown,
+	BsFillTrashFill as TrashIcon,
+	AiOutlineArrowUp as ArrowUpIcon,
 } from 'react-icons/all'
 
 export { Case } from './Case'

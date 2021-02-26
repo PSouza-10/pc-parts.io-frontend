@@ -46,6 +46,10 @@ export const Container = styled.div`
 
 		button:not(.eye-button) {
 			flex: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
 			background-color: var(--action-dark-blue);
 			border-radius: 0px 0px 0px 10px;
 			transition: 0.3s;

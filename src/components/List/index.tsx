@@ -6,11 +6,6 @@ export function List() {
 		<Container>
 			<ul>
 				<li>
-					<EyeIcon />
-					Vigiando
-				</li>
-
-				<li>
 					<MoneyIcon />
 					Minhas vendas
 				</li>

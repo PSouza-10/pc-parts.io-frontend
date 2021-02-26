@@ -1,4 +1,4 @@
-import { createContext, useState } from 'react'
+import { createContext, useState, useEffect } from 'react'
 import axios from 'axios'
 
 const initialState = {
@@ -9,42 +9,50 @@ const initialState = {
 		_id: '',
 		googleId: '',
 	},
+	isAuthenticated: false,
 }
-interface Context {
-	handleNewToken: (token: string) => any
+
+export const AuthContext = createContext<{
 	[x: string]: any
-}
-export const AuthContext = createContext<Context>({
-	handleNewToken: () => '',
-})
+}>({})
 
 const AuthProvider: React.FC = ({ children }) => {
 	const [authState, setAuth] = useState(initialState)
-	const handleNewToken = async (token: string) => {
-		localStorage.setItem('token', token)
+	async function handleNewToken() {
+		const token = window.location.search.split('token=')[1]
 
-		const { data: user } = await axios.get(
-			'http://localhost:5000/account',
-			{
-				headers: {
-					authorization: token,
-				},
+		console.log('function called')
+		if (token) {
+			localStorage.setItem('token', token)
+			const { data: user } = await axios.get(
+				'http://localhost:5000/account',
+				{
+					headers: {
+						authorization: token,
+					},
+				}
+			)
+			console.log(user)
+			if (user) {
+				setAuth({
+					...authState,
+					token: token,
+					user: user,
+					isAuthenticated: true,
+				})
 			}
-		)
-		console.log(user)
-		if (user) {
-			setAuth({
-				...authState,
-				token: token,
-				user: user,
-			})
 		}
 	}
-
+	useEffect(() => {
+		const handle = async () => {
+			console.log('a')
+			await handleNewToken()
+		}
+		handle()
+	}, [])
 	return (
 		<AuthContext.Provider
 			value={{
-				handleNewToken,
 				...authState,
 			}}
 		>

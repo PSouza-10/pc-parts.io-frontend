@@ -1,5 +1,5 @@
 import { Container } from './styles'
-import { EyeIcon } from '../icons'
+import { EyeIcon, CartIcon } from '../icons'
 
 export function Card() {
 	return (
@@ -16,7 +16,9 @@ export function Card() {
 			</div>
 
 			<div className='button-container'>
-				<button>Comprar</button>
+				<button>
+					<CartIcon />
+				</button>
 				<button className='eye-button'>
 					<EyeIcon />
 				</button>

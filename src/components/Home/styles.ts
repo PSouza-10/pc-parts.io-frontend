@@ -21,7 +21,7 @@ export const Container = styled.div`
 		grid-gap: 2.5rem 1rem;
 	}
 	${({ theme: { xl, lg, md, sm } }) => css`
-    @media (max-width: ${xl}) {
+   @media (max-width: ${xl}) {
      
       .container {
         grid-template-columns: repeat(3, 1fr);
@@ -37,6 +37,8 @@ export const Container = styled.div`
     @media  ( max-width: ${md}){
       
       
+				
+			
     }
 
     @media (max-width: ${sm}) {

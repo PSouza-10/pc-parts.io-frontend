@@ -5,12 +5,15 @@ import GlobalStyle from './globalStyle'
 import { ThemeProvider } from 'styled-components'
 import theme from './Theme'
 import AuthProvider from './Context/Auth'
+import SelectedProvider from './Context/SelectedParts'
 ReactDOM.render(
 	<React.StrictMode>
-		<ThemeProvider theme={theme}>
-			<GlobalStyle />
-			<App />
-		</ThemeProvider>
+		<SelectedProvider>
+			<ThemeProvider theme={theme}>
+				<GlobalStyle />
+				<App />
+			</ThemeProvider>
+		</SelectedProvider>
 	</React.StrictMode>,
 	document.getElementById('root')
 )

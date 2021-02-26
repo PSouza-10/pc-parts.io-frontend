@@ -35,7 +35,7 @@ export default function Account() {
 						<Google />
 					</section>
 					<a
-						href='http://localhost:5000/account/google'
+						href='https://pc-parts-server.herokuapp.com//account/google'
 						target='_blank'
 						className='google-login'
 					>

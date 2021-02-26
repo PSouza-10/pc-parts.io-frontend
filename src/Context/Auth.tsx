@@ -24,7 +24,7 @@ const AuthProvider: React.FC = ({ children }) => {
 		if (token) {
 			localStorage.setItem('token', token)
 			const { data: user } = await axios.get(
-				'http://localhost:5000/account',
+				'https://pc-parts-server.herokuapp.com/account',
 				{
 					headers: {
 						authorization: token,

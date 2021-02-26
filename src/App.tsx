@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useContext } from 'react'
-import { Home, Sidebar, Chat, List } from './components'
+import React from 'react'
+import { Home, Sidebar, Chat } from './components'
 import { Header } from './components/Header'
-import { AuthContext } from './Context/Auth'
 
 function App() {
 	return (

@@ -21,7 +21,6 @@ const AuthProvider: React.FC = ({ children }) => {
 	async function handleNewToken() {
 		const token = window.location.search.split('token=')[1]
 
-		console.log('function called')
 		if (token) {
 			localStorage.setItem('token', token)
 			const { data: user } = await axios.get(
@@ -44,11 +43,7 @@ const AuthProvider: React.FC = ({ children }) => {
 		}
 	}
 	useEffect(() => {
-		const handle = async () => {
-			console.log('a')
-			await handleNewToken()
-		}
-		handle()
+		handleNewToken()
 	}, [])
 	return (
 		<AuthContext.Provider

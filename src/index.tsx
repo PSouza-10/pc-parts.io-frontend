@@ -8,12 +8,14 @@ import AuthProvider from './Context/Auth'
 import SelectedProvider from './Context/SelectedParts'
 ReactDOM.render(
 	<React.StrictMode>
-		<SelectedProvider>
-			<ThemeProvider theme={theme}>
-				<GlobalStyle />
-				<App />
-			</ThemeProvider>
-		</SelectedProvider>
+		<AuthProvider>
+			<SelectedProvider>
+				<ThemeProvider theme={theme}>
+					<GlobalStyle />
+					<App />
+				</ThemeProvider>
+			</SelectedProvider>
+		</AuthProvider>
 	</React.StrictMode>,
 	document.getElementById('root')
 )

@@ -18,6 +18,7 @@ export {
 	MdKeyboardArrowDown as ArrowDown,
 	BsFillTrashFill as TrashIcon,
 	AiOutlineArrowUp as ArrowUpIcon,
+	IoMdLogOut as Logout,
 } from 'react-icons/all'
 
 export { Case } from './Case'

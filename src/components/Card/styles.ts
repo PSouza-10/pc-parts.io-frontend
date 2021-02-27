@@ -12,11 +12,9 @@ export const Container = styled.div`
 
 	.img-wrapper {
 		width: 100%;
-		max-height: 45vh;
-		min-height: 45vh;
+		max-width: 100%;
 		img {
 			width: 100%;
-			height: 100%;
 		}
 	}
 
@@ -34,8 +32,8 @@ export const Container = styled.div`
 	}
 
 	.text {
+		margin: auto 0;
 		margin-left: 10px;
-		margin-top: 30px;
 	}
 
 	.button-container {

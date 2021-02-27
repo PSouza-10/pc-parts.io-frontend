@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect } from 'react'
+import { createContext, useState, useEffect, useCallback } from 'react'
 import axios from 'axios'
 
 const initialState = {
@@ -18,7 +18,7 @@ export const AuthContext = createContext<{
 
 const AuthProvider: React.FC = ({ children }) => {
 	const [authState, setAuth] = useState(initialState)
-	async function handleNewToken() {
+	const handleNewToken = useCallback(async () => {
 		const token = window.location.search.split('token=')[1]
 
 		if (token) {
@@ -41,14 +41,21 @@ const AuthProvider: React.FC = ({ children }) => {
 				})
 			}
 		}
-	}
+	}, [])
+
 	useEffect(() => {
 		handleNewToken()
-	}, [])
+	}, [handleNewToken])
+
+	async function logout() {
+		localStorage.removeItem('token')
+		setAuth(initialState)
+	}
 	return (
 		<AuthContext.Provider
 			value={{
 				...authState,
+				logout,
 			}}
 		>
 			{children}

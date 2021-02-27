@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components'
 
 export const Container = styled.div`
 	display: flex;
+	margin-bottom: 1rem;
 	overflow-y: scroll;
 	max-height: 90vh;
 	width: 100%;

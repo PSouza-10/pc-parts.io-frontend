@@ -1,31 +1,48 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Container = styled.ul<{ color?: string }>`
 	display: flex;
 	flex-direction: column;
 	width: 40%;
+	height: 100%;
+`
 
-	li {
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
+export interface ListItemProps
+	extends React.DetailedHTMLProps<
+		React.LiHTMLAttributes<HTMLLIElement>,
+		HTMLLIElement
+	> {
+	icon?: JSX.Element
+	label?: any
+	bottom?: boolean
+	color?: string
+}
 
-		margin: 5px;
-		padding: 2px;
-		transition: background-color 0.2s;
+export const ListItem = styled.li<ListItemProps>`
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
 
+	padding: 0.3em;
+	transition: background-color 0.2s;
+	&,
+	& > * {
 		cursor: pointer;
-
-		&:hover {
-			background-color: var(--white-fade);
-		}
 	}
 
+	&:hover {
+		background-color: var(--white-fade);
+	}
+	label {
+		font-size: 1.3em;
+	}
 	svg {
 		flex-shrink: 0;
-		height: 1.2rem;
-		width: 1.2rem;
-		fill: var(--icon);
-		margin-right: 10px;
+		height: 2em;
+		width: 2em;
+		fill: ${({ color }) => (color ? color : 'var(--icon)')};
+		margin-right: 1em;
 	}
+
+	${({ bottom }) => bottom && 'margin-top:auto'};
 `

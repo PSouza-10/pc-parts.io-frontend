@@ -1,25 +1,36 @@
-import { Container } from './styles'
-import { MoneyIcon, GearIcon, PlusIcon, EyeIcon } from '../icons'
+import { Container, ListItem, ListItemProps } from './styles'
 
-export function List() {
+interface ListProps
+	extends React.DetailedHTMLProps<
+		React.HTMLAttributes<HTMLUListElement>,
+		HTMLUListElement
+	> {
+	items: ListItemProps[]
+	action?: (
+		event: React.MouseEvent<HTMLLIElement, MouseEvent>,
+		item?: ListItemProps
+	) => any
+}
+
+export const List: React.FC<ListProps> = ({
+	className,
+	items,
+	action = () => '',
+}) => {
 	return (
-		<Container>
-			<ul>
-				<li>
-					<MoneyIcon />
-					Minhas vendas
-				</li>
-
-				<li>
-					<GearIcon />
-					Configurações de conta
-				</li>
-
-				<li>
-					<PlusIcon />
-					Adicionar produto pra venda
-				</li>
-			</ul>
+		<Container className={className}>
+			{items.map(({ label, icon, bottom, color }, idx) => (
+				<ListItem
+					color={color}
+					bottom={bottom}
+					onClick={(e) => action(e, items[idx])}
+				>
+					{icon}
+					<label>{label}</label>
+				</ListItem>
+			))}
 		</Container>
 	)
 }
+
+export type { ListItemProps } from './styles'

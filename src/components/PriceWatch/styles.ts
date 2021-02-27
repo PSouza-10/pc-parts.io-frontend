@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Container = styled.button`
 	margin-right: 1rem;
@@ -31,7 +31,7 @@ export const BodyContainer = styled.div`
 
 	.body-wrapper {
 		width: 100%;
-		height: 100px;
+		height: 150px;
 
 		padding: 5px 0;
 		margin-bottom: 20px;
@@ -53,15 +53,6 @@ export const BodyContainer = styled.div`
 
 			justify-content: space-between;
 
-			span:first-child {
-				margin-left: 2rem;
-				color: var(--action-red);
-
-				svg {
-					color: var(--active-red);
-				}
-			}
-
 			> span {
 				display: flex;
 				justify-content: space-between;
@@ -81,6 +72,14 @@ export const BodyContainer = styled.div`
 
 			> h4 {
 				font-size: 1rem;
+
+				span {
+					color: var(--action-red);
+
+					svg {
+						color: var(--active-red);
+					}
+				}
 			}
 
 			svg {
@@ -106,6 +105,17 @@ export const BodyContainer = styled.div`
 		background-color: var(--action-blue);
 		border-radius: 0.3rem;
 	}
+
+	${({ theme: { xl, lg, md, sm } }) => css`
+		@media (max-width: ${sm}) {
+			.body-wrapper {
+				> img {
+					width: 100px;
+					height: 100px;
+				}
+			}
+		}
+	`}
 `
 
 export const FooterContainer = styled.section`

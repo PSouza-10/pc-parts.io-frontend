@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const Container = styled.button`
 	margin-right: 1rem;
@@ -23,31 +23,31 @@ export const Container = styled.button`
 export const BodyContainer = styled.div`
 	flex: 1;
 	overflow-y: auto;
-	padding: 0 1.56rem;
-	margin-top: 1.87rem;
+	padding: 0 25px;
+	margin-top: 30px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
 	.body-wrapper {
 		width: 100%;
-		height: 6.25rem;
+		height: 150px;
 
-		padding: 0.31rem 0;
-		margin-bottom: 0.31rem;
+		padding: 5px 0;
+		margin-bottom: 20px;
 
 		border-bottom: 1px solid #fff;
 
 		display: flex;
 
 		> img {
-			margin-right: 0.625rem;
-			border-radius: 0.625rem;
+			margin-right: 10px;
+			border-radius: 10px;
 		}
 
 		.text-container {
 			flex: 1;
-			padding-right: 0.31rem;
+			padding-right: 5px;
 			display: flex;
 			flex-direction: column;
 
@@ -63,15 +63,23 @@ export const BodyContainer = styled.div`
 
 					&::before {
 						content: '->';
-						color: var(--action-blue);
+						color: var(--action-red);
 						font-size: 1.7rem;
-						margin-right: 0.31rem;
+						margin-right: 5px;
 					}
 				}
 			}
 
 			> h4 {
 				font-size: 1rem;
+
+				span {
+					color: var(--action-red);
+
+					svg {
+						color: var(--active-red);
+					}
+				}
 			}
 
 			svg {
@@ -90,13 +98,24 @@ export const BodyContainer = styled.div`
 
 	&::-webkit-scrollbar {
 		background-color: transparent;
-		width: 0.31rem;
+		width: 5px;
 	}
 
 	&::-webkit-scrollbar-thumb {
 		background-color: var(--action-blue);
 		border-radius: 0.3rem;
 	}
+
+	${({ theme: { xl, lg, md, sm } }) => css`
+		@media (max-width: ${sm}) {
+			.body-wrapper {
+				> img {
+					width: 100px;
+					height: 100px;
+				}
+			}
+		}
+	`}
 `
 
 export const FooterContainer = styled.section`

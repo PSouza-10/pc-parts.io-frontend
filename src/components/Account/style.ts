@@ -5,7 +5,7 @@ export const Container = styled.button`
 
 	height: 2.6rem;
 	width: 2.6rem;
-
+	border-radius: 50%;
 	transition: background-color 0.2s;
 
 	&:hover {
@@ -17,6 +17,8 @@ export const Container = styled.button`
 	}
 	img {
 		border-radius: 50%;
+		height: 100%;
+		width: 100%;
 	}
 `
 

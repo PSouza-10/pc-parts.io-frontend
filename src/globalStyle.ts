@@ -7,11 +7,7 @@ export default createGlobalStyle`
         font-family: 'Titillium Web', sans-serif;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         -webkit-tap-highlight-color: transparent;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
+       
         outline: none;
         box-shadow: none;
         color: var(--text-primary);
@@ -47,6 +43,8 @@ export default createGlobalStyle`
     body,#root {
         min-height: 100%;
         width:100%;
+        overflow: hidden;
+        max-height: 100vh;
     }
    
     .App{

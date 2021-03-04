@@ -7,8 +7,8 @@ interface InputProps
 		React.InputHTMLAttributes<HTMLInputElement>,
 		HTMLInputElement
 	> {
-	label?: any
-	icon?: React.ReactElement
+	label?: string
+	icon?: JSX.Element
 	[x: string]: any
 }
 
@@ -21,8 +21,8 @@ export const TextInput: React.FC<InputProps> = ({
 	return (
 		<InputContainer>
 			<span className='icon-wrapper'>{icon}</span>
+			<input onChange={onChange} {...props} />
 			<label htmlFor={props.name}>{label}</label>
-			<input {...props} />
 		</InputContainer>
 	)
 }

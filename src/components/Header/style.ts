@@ -16,7 +16,7 @@ export const Container = styled.header`
 		transition: background-color 0.2s;
 
 		&:hover {
-			background-color: #ffffff96;
+			background-color: var(--white-fade);
 		}
 	}
 `

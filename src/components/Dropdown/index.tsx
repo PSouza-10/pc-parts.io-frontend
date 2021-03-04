@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Container, Selected, List, ListItem } from './styles'
 import { ArrowDown } from '../icons'
 import { FlattenSimpleInterpolation } from 'styled-components'
-interface DropDownitems {
+export interface DropDownitems {
 	selected?: boolean
 	itemId?: number | string
 	content: any

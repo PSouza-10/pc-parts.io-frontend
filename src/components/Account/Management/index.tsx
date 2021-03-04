@@ -3,10 +3,7 @@ import { List, ListItemProps } from '../../List'
 import { useState, useContext } from 'react'
 import { MoneyIcon, GearIcon, PlusIcon } from '../../icons'
 import { AuthContext } from '../../../Context/Auth'
-interface Options {
-	[x: string]: any
-}
-
+import { Forms } from '../Forms'
 export default function Management() {
 	const [selectedTab, setTab] = useState('minhas_vendas')
 	const { logout } = useContext(AuthContext)
@@ -44,12 +41,6 @@ export default function Management() {
 		},
 	]
 
-	const options: Options = {
-		minhas_vendas: <h1> Minhas Vendas </h1>,
-		configuracoes: <h1> Configurações de conta </h1>,
-		logout: <h1> Logout </h1>,
-	}
-
 	return (
 		<Container>
 			<List
@@ -58,9 +49,7 @@ export default function Management() {
 				action={(e, item) => handleListClick(e, item)}
 			/>
 			<ConfigOptions>
-				<section className='form-wrapper'>
-					{options[selectedTab]}
-				</section>
+				<section className='form-wrapper'>{Forms[selectedTab]}</section>
 				<div className='save'>
 					<button className='save-button'> Salvar</button>
 				</div>

@@ -7,13 +7,18 @@ export const Container = styled.button`
 	width: 2.6rem;
 
 	transition: background-color 0.2s;
+	border-radius: 50%;
 
 	&:hover {
-		background-color: #ffffff96;
+		background-color: var(--white-fade);
 	}
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	svg {
-		height: 100%;
-		width: 100%;
+		height: 80%;
+		width: 80%;
 	}
 	img {
 		border-radius: 50%;

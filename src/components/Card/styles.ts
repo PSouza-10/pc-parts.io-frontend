@@ -10,6 +10,8 @@ export const Container = styled.div`
 	display: flex;
 	flex-direction: column;
 
+	transition: 0.2s;
+
 	.img-wrapper {
 		width: 100%;
 		max-width: 100%;
@@ -25,7 +27,7 @@ export const Container = styled.div`
 
 	h3 {
 		&::before {
-			content: '->';
+			content: '->  ';
 			color: var(--action-blue);
 			font-size: 1.7rem;
 		}
@@ -78,6 +80,11 @@ export const Container = styled.div`
 		height: 1.3rem;
 		width: 1.3rem;
 		margin: 0 auto;
+	}
+
+	&:hover {
+		opacity: 0.8;
+		transform: scale(1.01);
 	}
 
 	@media (max-width: ${({ theme: { sm } }) => sm}) {

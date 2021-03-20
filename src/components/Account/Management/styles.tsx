@@ -7,7 +7,7 @@ export const Container = styled.div`
 	height: 100%;
 
 	.optionList {
-		width: 20%;
+		font-size: 0.9rem;
 	}
 
 	.options {
@@ -21,6 +21,24 @@ export const ConfigOptions = styled.section`
 	flex-direction: column;
 	.form-wrapper {
 		flex: 1;
+		h2 {
+			margin-top: 0.6rem;
+		}
+		.input-wrapper {
+			margin: 0 1rem;
+			margin-top: 1rem;
+		}
+		.dropdown-wrapper {
+			margin: 0;
+		}
+	}
+
+	.sales {
+		span {
+			display: flex;
+			text-align: center;
+			justify-content: space-between;
+		}
 	}
 
 	.save {

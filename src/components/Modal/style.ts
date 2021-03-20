@@ -71,7 +71,7 @@ export const ModalContainer = styled.div<IModalProps>`
 		border-bottom: 2px solid var(--action-blue);
 		.modal-header-title {
 			margin-left: 1rem;
-			font-size: 2rem;
+			font-size: 1.5rem;
 		}
 
 		.modal-header-close {

@@ -54,3 +54,78 @@ export const Container = styled.button`
 		}
 	`}
 `
+
+export const Header = styled.div`
+	margin: 1rem;
+	color: var(--text-primary);
+
+	textarea {
+		background-color: var(--box-color);
+		font-size: 1.3rem;
+		border-color: var(--action-blue);
+		border-radius: 0.4em;
+		resize: none;
+
+		margin: 1rem 0rem;
+		padding: 1rem;
+
+		width: 100%;
+		height: 30rem;
+	}
+
+	.buttonContainer {
+		display: flex;
+		justify-content: space-between;
+
+		.confirmButton,
+		.denyButton {
+			padding: 0.5rem;
+			font-size: 1.2rem;
+			text-transform: uppercase;
+			width: 100rem;
+			letter-spacing: 0.2rem;
+			border: 2px solid var(--action-blue);
+			color: var(--action-blue);
+			margin: auto;
+			margin: 1rem;
+
+			cursor: pointer;
+
+			&:hover {
+				background-color: var(--action-blue);
+				color: white;
+			}
+			transition: all 0.3s ease;
+		}
+
+		.denyButton {
+			border: 2px solid var(--action-red);
+			color: var(--action-red);
+
+			&:hover {
+				background-color: var(--action-red);
+				color: white;
+			}
+		}
+	}
+`
+
+export const MessageHeader = styled.div`
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+
+	margin: 1rem;
+
+	img {
+		border-radius: 50%;
+		width: 4.5rem;
+		height: 4.5rem;
+	}
+`
+
+export const Input = styled.div``
+export const EmojiIcon = styled.div``
+export const MessageContainer = styled.div``
+export const Badges = styled.div``
+export const SendIcon = styled.div``

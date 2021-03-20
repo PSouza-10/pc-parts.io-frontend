@@ -3,8 +3,9 @@ import styled from 'styled-components'
 export const Container = styled.ul<{ color?: string }>`
 	display: flex;
 	flex-direction: column;
-	width: 40%;
+
 	height: 100%;
+	font-size: 0.9rem;
 `
 
 export interface ListItemProps

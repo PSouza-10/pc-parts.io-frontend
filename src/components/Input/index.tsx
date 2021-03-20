@@ -19,7 +19,7 @@ export const TextInput: React.FC<InputProps> = ({
 	...props
 }) => {
 	return (
-		<InputContainer>
+		<InputContainer className='input-wrapper'>
 			<span className='icon-wrapper'>{icon}</span>
 			<input onChange={onChange} {...props} />
 			<label htmlFor={props.name}>{label}</label>

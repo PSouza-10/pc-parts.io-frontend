@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Container, Selected, List, ListItem } from './styles'
 import { ArrowDown } from '../icons'
 import { FlattenSimpleInterpolation } from 'styled-components'
@@ -14,6 +14,7 @@ interface DropdownProps {
 	selected?: string | number
 	setSelected?: (newValue?: any) => any
 	CSS?: FlattenSimpleInterpolation
+	layer: number
 }
 
 const Dropdown: React.FC<DropdownProps> = ({
@@ -21,13 +22,15 @@ const Dropdown: React.FC<DropdownProps> = ({
 	selected,
 	setSelected,
 	CSS,
+	layer,
 }) => {
 	const [isOpen, setIsOpen] = useState(false)
 
 	const handleDropdown = () => setIsOpen(!isOpen)
 	const selectedItem = items.find(({ itemId }) => itemId === selected)
+
 	return (
-		<Container CSS={CSS}>
+		<Container CSS={CSS} className='dropdown-wrapper' layer={layer}>
 			<Selected
 				open={isOpen}
 				onClick={handleDropdown}
@@ -42,7 +45,7 @@ const Dropdown: React.FC<DropdownProps> = ({
 						key={idx}
 						{...item}
 						onClick={() => {
-							setSelected && setSelected(item.itemId)
+							setSelected && setSelected(item.itemId || '')
 							handleDropdown()
 						}}
 						className='dropdown-item'
